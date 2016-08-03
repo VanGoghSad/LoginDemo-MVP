@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.bzt.logindemo.view.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_enterusername"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_user"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/v_etUserNameLine"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/col_split_line" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 密码条目-->
+    <RelativeLayout
+        android:id="@+id/rl_login_enterpassword"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_login_enterusername"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_password"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/v_etPasswordLine"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/col_split_line" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_login_enterpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_login_button"
+        android:text="@string/str_login_btn"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+
+

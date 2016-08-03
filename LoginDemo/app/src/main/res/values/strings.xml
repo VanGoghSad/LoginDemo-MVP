@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LoginDemo</string>
+    <string name="str_login_btn">login</string>
 </resources>
